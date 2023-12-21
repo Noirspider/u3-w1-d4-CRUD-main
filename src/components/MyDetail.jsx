@@ -2,7 +2,7 @@ import React from "react";
 import CardComp from "./CardComp";
 import { Col, Row } from "react-bootstrap";
 import AddCommentComp from "./AddCommentComp";
-import CommentAreaComp from "./AddCommentComp";
+import CommentAreaComp from "./CommentComp";
 
 function MyDetail(props) {
   return (
@@ -12,7 +12,7 @@ function MyDetail(props) {
       </Col>
       <Col xs={12}>
         <AddCommentComp />
-        <CommentAreaComp />
+        <CommentAreaComp  bookObj={props.bookObj}/>
       </Col>
     </Row>
   );
